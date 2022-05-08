@@ -1,4 +1,8 @@
 
+# 📦 WebServer | Spigot
+
+Hier findest du alle Dateien sowie wichtige Informationen und Dukumentationen die Genau erklären wie die verschieden Methoden Funktionieren
+
 ## Befehle
 
 #### Benutzung Umgang fehler finden und ... und Probleme beheben
