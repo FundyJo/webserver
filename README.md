@@ -23,4 +23,5 @@ Hier findest du alle Dateien sowie wichtige Informationen und Dukumentationen di
 | `/webserver restart` | `server` | **Benötigt**. webserver.restart |
 | `/webserver reload` | `system` | **Benötigt**. webserver.reload |
 | `/webserver info <commands/discord> ` | `info` | **Benötigt**. webserver.commands / discord |
+| `/webserver version ` | `version` | **Benötigt**. webserver.version |
 
