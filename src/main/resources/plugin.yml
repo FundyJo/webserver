@@ -1,0 +1,11 @@
+name: WebServer
+version: 1.4.0_stable
+main: jo.fundy.WebServer
+commands:
+  webserver:
+    description: Controls the Spigot HTTP Server instance
+    usage: /webserver (stop|start|restart|reload|info|version)
+permissions:
+  shs.admin:
+    description: Allow use of Spigot WebServer commands.
+    default: true

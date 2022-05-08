@@ -1,0 +1,3 @@
+# Spigot HTTP Server Access Logs
+
+ErrorDocument 404 /404.html

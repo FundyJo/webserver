@@ -1,0 +1,107 @@
+#░██╗░░░░░░░██╗███████╗██████╗░       ░██████╗███████╗██████╗░██╗░░░██╗███████╗██████╗░
+#░██║░░██╗░░██║██╔════╝██╔══██╗       ██╔════╝██╔════╝██╔══██╗██║░░░██║██╔════╝██╔══██╗
+#░╚██╗████╗██╔╝█████╗░░██████╦╝       ╚█████╗░█████╗░░██████╔╝╚██╗░██╔╝█████╗░░██████╔╝
+#░░████╔═████║░██╔══╝░░██╔══██╗       ░╚═══██╗██╔══╝░░██╔══██╗░╚████╔╝░██╔══╝░░██╔══██╗
+#░░╚██╔╝░╚██╔╝░███████╗██████╦╝       ██████╔╝███████╗██║░░██║░░╚██╔╝░░███████╗██║░░██║
+#░░░╚═╝░░░╚═╝░░╚══════╝╚═════╝░       ╚═════╝░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░╚══════╝╚═╝░░╚═╝
+#                for Spigot by FundyJo createt to Support your Server
+#                           with your personal Website!
+
+#                             ! IMPORTANT BEVOR USE !
+
+#     This Website Plugin can be used on the Version 1.8 - 1.18.2 if your Server
+#       use a Version like 1.7 that is not *Supportet* our Support wouldnt
+#     help you. In this WebServer.zip you find a php folder you can if you wanna
+#         add this File to your Server as PHP so you can use .php Files!
+#       you find a short info how to do under this text by (shstags-enabled)
+#
+#            Get Support on my Disocrd: https://discord.gg/wUDUTP5hPW
+
+#                         API for Html
+#
+#         SERVER_NAME - Prints your server name from server.properties.
+#         SERVER_VERSION - Prints your server version
+#         SERVER_IP - Prints the server ip from server.properties
+#         SERVER_PORT - Prints the server port from server.properties
+#         MAX_PLAYERS - Prints server max player slots from server.properties
+#         SERVER_MOTD - Prints a non-stylized MOTD from server.properties
+#         PLAYERS_ONLINE_LIST - Prints a list of characters online with the avatar.
+#         PLAYERS_ONLINE_COUNT - Prints the count (int) of players online in the server.
+
+#                   you find a example at the bottom of this File!
+
+# Web Site/Network Name
+server-name: WebServer - Examplename
+
+# Web Site/Network Address
+server-address: null
+
+# Server IP (Eg localhost / 127.0.0.1 / Bound External IP )
+server-ip: 127.0.0.1
+
+# Additional IPs, do not uncomment unless assigning available ips on your network
+#additional-ips:
+# - 192.168.0.1
+
+# Web Port (Default: 80)
+server-port: 80
+
+# Error Pages where do you wanna send your client?
+# if your Website Response an error while
+# joining your Website (404,403....)
+503-error: 503.html
+404-error: 404.html
+401-error: 401.html
+
+# Server Root Path
+# This is where your HTTP server root is. No trailing slash! Examples:
+# Windows: C:\Users\Minecraft\Spigot\plugins\SpigotHttpServer\public_html
+# Linux: /home/spigot/server/plugins/SpigotHttpServer/public_html
+server-path: /home/spigot/server/plugins/WebServer/public_html
+
+# Max simultaneous connections
+# Considering you are running a small server via a plugin on your
+# Spigot Server, considering keeping this low. Connections over this limit
+# will be rejected with a 503 Service Unavailable Error. 
+# Setting this to 0 or 1 will drop all incoming connections serving the 503
+max-connections: 200
+
+#Plugin Language
+# The Default Language will be set to english
+# else you can change it!
+language: NONE
+
+# Kill Switch
+# If this enabled, instead of serving a 503 error when connection limit is
+# reached, Spigot HTTP Server will shutdown for X time before returning online
+kill-switch-enabled: false
+
+# Kill Switch - Restart Timer (In Ticks)
+# [Default: 2400] - 2 Minutes
+kill-switch-restart: 2400
+
+# PHP Gateway Enabled
+# This shouldn't be enabled if you do not have PHP installed
+php-gateway-enabled: false
+
+# PHP Path*
+# This is the full path, or command to your PHP parser
+# Linux Example: /user/bin/php
+# Windows Example C:\Users\Example_Name\file_to_php\php.exe
+
+# Note (Linux): On linux if you do not know your PHP path you may have to guess if you do not have access to the terminal. If you do, try running: find / -name "php"
+# Note (Windows): On windows your php-path should point to your php.exe. (You can download PHP form here: http://windows.php.net/download/ or use another instance like WAMPs)
+
+php-path: php
+
+# Did we, or do we want to generate the default index
+# This is set false for first run to generate an example
+generated-index: true
+
+#                            Html API use Example!
+#
+#         <div id="usersonline">
+#         We have <shs type="players_online_count"> of <shs type="max_players"> players online.<br />
+#         <p id="userlist"><shs type="players_online_list"><p>
+#         </div>
+
